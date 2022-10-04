@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pygments-pg"
+version = "0.1.0"
+description = "Pygments lexer for pg (WeBWorK code."
+authors = ["Malcolm Harper <mharper@crcmail.net>"]
+license = "GPL3"
+readme = "README.md"
+packages = [{include = "pygments_pg"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+Pygments = "^2"
+flake8 = "^5.0.4"
+black = "^22.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
